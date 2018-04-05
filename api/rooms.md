@@ -59,6 +59,10 @@
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="username" type="string" required=true %}
+可以是jid 也可以是username
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="roomName" type="string" required=true %}
 群名称
 {% endapi-method-parameter %}
@@ -72,7 +76,11 @@
 {% endapi-method-response-example-description %}
 
 ```javascript
-
+{
+    "code": "0",// 你没看错 是字符串！
+    "msg": "success",
+    "data": true// 是否群主
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
