@@ -47,5 +47,37 @@
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="http://app.deve.xiaopao69.com" path="/plugins/restapi/v1/chatrooms/isOwner/:roomName/:username" %}
+{% api-method-summary %}
+获取用户是否为owner
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="roomName" type="string" required=true %}
+群名称
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 
 
