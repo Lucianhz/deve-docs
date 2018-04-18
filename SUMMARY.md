@@ -6,5 +6,5 @@
 ## API
 
 * [群信息相关](api/rooms.md)
-* [其他](api/qi-ta.md)
+* [其他](api/other.md)
 
